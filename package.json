@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/summis/Fspx2019.git"
+    "url": "git+https://github.com/fyysikkokilta/Fspx2019.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/summis/Fspx2019/issues"
+    "url": "https://github.com/fyysikkokilta/Fspx2019/issues"
   },
-  "homepage": "https://github.com/summis/Fspx2019#readme",
+  "homepage": "https://github.com/fyysikkokilta/Fspx2019#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.1.0"
   }
 }
