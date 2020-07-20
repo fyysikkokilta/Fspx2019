@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" type="text/css" href="./css/fspx.css" />
   <link rel="icon" sizes="48x48" href="img/speksilogo_48.ico">
   <link rel="icon" sizes="16x16" href="img/speksilogo_16.ico">
@@ -30,10 +31,10 @@
         <li class="nav-item">
           <a class="nav-link" href="#production">Fyysikkospeksi 2019</a>
         </li>
-        <li class="nav-item">
+        <!--li class="nav-item">
           <a class="nav-link finnish" href="#buy-tickets">Osta liput</a>
           <a class="nav-link english" href="#buy-tickets">Buy tickets</a>
-        </li>
+        </li-->
         <li class="nav-item">
           <a class="nav-link finnish" href="#about">Mikä speksi?</a>
           <a class="nav-link english" href="#about">About spex</a>
@@ -57,22 +58,33 @@
   <div class="grid-container">
     <!-- Front page: big background image and navigation buttons and ticket shop button -->
     <div class="header header-background-image">
-      <div class="overlay"></div>
+      <div class="overlay">
+        <div class="carousel slide" data-ride="carousel" data-interval=4500 keyboard=false>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="carousel-item-1"></div>
+            <div class="carousel-item" id="carousel-item-2"></div>
+            <div class="carousel-item" id="carousel-item-3"></div>
+            <div class="carousel-item" id="carousel-item-4"></div>
+            <div class="carousel-item" id="carousel-item-5"></div>
+            <div class="carousel-item" id="carousel-item-6"></div>
+          </div>
+        </div>
+      </div>
       <div class="header-contents">
-        <h2 class="finnish">Fyysikkospeksi esittää</h2>
-        <h2 class="english">Fyysikkospeksi presents</h2>
+        <h2 class="finnish">Fyysikkospeksi 2019 oli</h2>
+        <h2 class="english">Fyysikkospeksi 2019 was</h2>
         <h1 class="finnish">Suo anteeksi</h1>
         <h1 class="english">Our hopes and expectations</h1>
-        <h3 class="finnish dates">17.-21.10.2019</h3>
-        <h3 class="english dates">19.11.2019</h3>
+        <h3 class="finnish dates">näytökset 17.-21.10.2019</h3>
+        <h3 class="english dates">presented on 19.11.2019</h3>
 
         <br />
         <br />
         <div class="header-button-row">
           <a href="#production" class="button-outline finnish">Lue lisää</a>
           <a href="#production" class="button-outline english">Read more</a>
-          <a href="#buy-tickets" class="button-solid finnish">Osta lippu</a>
-          <a href="#buy-tickets" class="button-solid english">Buy tickets</a>
+          <!--a href="#buy-tickets" class="button-solid finnish">Osta lippu</a>
+          <a href="#buy-tickets" class="button-solid english">Buy tickets</a-->
         </div>
       </div>
     </div>
@@ -187,45 +199,26 @@
         <h3 class="uppercase finnish">Suo anteeksi</h3>
         <h3 class="uppercase english">Our hopes and expectations</h3>
         <p class="finnish">
-          Vuoden 2019 Fyysikkospeksi vie katsojat lähihistoriaan, idylliseen suomalaiseen maalaiskylään, Takasäynävän
+          Vuoden 2019 Fyysikkospeksi vei katsojat lähihistoriaan, idylliseen suomalaiseen maalaiskylään, Takasäynävän
           tuolle puolen. Hiljakseen eteenpäin virtaavan ajan juoksuun tulee kuitenkin särö, kun vuosia patoutuneet
           kaunat purkautuvat ärjyvänä tunteiden koskena ja selittämätön pimeys pyyhkii puintikypsinä notkuvien
           kultaisten viljapeltojen yli. Loppujen lopuksi kysymykseksi jää vain kumpi on sakeampaa, veri vai kaiken
           nielevän suonsilmäkkeen mustana päilyvä vesi.
         </p>
         <p class="english">
-          Fyysikkospeksi 2019 takes the viewer on a tour of recent history, to a small rustic town in the Finnish
+          Fyysikkospeksi 2019 took the viewer on a tour of recent history, to a small rustic town in the Finnish
           countryside, next to the middle of nowhere. The calm meandering passage of time seems endless until it
           doesn’t; Levees protecting a harbored grudge break and long bottled resentment flows freely. An inexplicable
           source of darkness floats over the amber waves of grain. Ultimately, one question remains: which is thicker,
           blood or the murky muddy waters of the wetland?
         </p>
         <p class="finnish">
-          Esityksen kesto on noin 3 tuntia sisältäen väliajan. Olethan ajoissa paikalla, sillä paikat eivät ole
-          numeroituja. Teatteriin pääsee sisälle noin tunti ennen näytöstä ja salin ovet avataan 20 minuuttia ennen
-          esityksen alkua. Esitys sisältää kirkkaita valoja ja voimakkaita ääniä.
+          Kuvia esityksistä on nähtävillä <a href="https://www.flickr.com/photos/fyysikkokilta/albums/72157711879309268/">Fyysikkokillan galleriassa.</a>
         </p>
         <p class="english">
-          The duration of the show is approximately 3 hours, including an intermission. Please arrive on time, as the
-          seats are not numbered. The doors to the theatre are opened 20 minutes before the show. The show includes
-          bright lights and loud sounds.
+          Pictures from the shows can be seen in the <a href="https://www.flickr.com/photos/fyysikkokilta/albums/72157711879309268/">Guild of Physics gallery.</a>
         </p>
-        <div class="desktop-ticket-info">
-          <p class="finnish">Tarjoamme ryhmäliput vähintään 8 hengen seurueille, kun koko tilaus tehdään kerralla.
-            Mikäli haluatte ostaa ryhmälippuja, laittakaa sähköpostia osoitteeseen <a
-              href="mailto:tuottajat@fyysikkospeksi.fi">tuottajat@fyysikkospeksi.fi</a>. Ryhmille varataan
-            automaattisesti vierekkäiset paikat. Voitte tehdä ryhmälle myös alustavan varauksen, kunhan vahvistatte lopullisen osallistujamäärän viimeistään kaksi viikkoa ennen näytöstä.</p>
-          <p class="english">Group tickets are offered to groups of over 8 people when all tickets are bought at the
-            same time. If you want to buy group tickets, please send an email to <a
-              href="mailto:tuottajat@fyysikkospeksi.fi">tuottajat@fyysikkospeksi.fi</a>. Adjacent seats are
-            automatically reserved for groups. You can also make an initial reservation for the group as long as you confirm your final group size two weeks before the show at latest.</p>
-          <p class="finnish">Kannatuslipun ostajille varataan parhaat paikat keskeltä salin etuosasta.</p>
-          <p class="finnish italic">Huom! Jos saavut eri aikaan ryhmän kanssa tai et omista älypuhelinta, jolta voisit näyttää lippusi teatterilla, pääset sisään kertomalla oman nimesi lipuntarkastajalle teatterin ovella.</p>
-          <p class="english">Buying a patron ticket ensures that you will get the best seats in the whole theatre!</p>
-          <p class="english italic">Note that if you arrive separately from a group or do not own a smartphone, you can get in to the show by declaring your name to the staff at the theater door.</p>
-        </div>
-
-        <a class="anchor" id="buy-tickets"></a>
+        <!--a class="anchor" id="buy-tickets"></a>
         <table class="tickets-table">
           <tr>
             <th colspan="4">
@@ -315,7 +308,7 @@
                 target="_blank">Buy tickets</a>
             </td>
           </tr>
-        </table>
+        </table-->
       </div>
     </div>
 
@@ -383,14 +376,14 @@
         <p class="finnish">
           Speksi on interaktiivista musiikki- ja tanssinumeroilla höystettyä opiskelijateatteria. Fyysikkospeksin, eli
           alun perin Aalto-yliopiston Teknillisen Fysiikan ja Matematiikan opiskelijoiden oman speksin historia sai
-          alkunsa vuonna 2007 ja siitä lähtien Fyysikkospeksi on esitetty parittomina vuosina. Seuraava speksi saa
+          alkunsa vuonna 2007 ja siitä lähtien Fyysikkospeksi on esitetty parittomina vuosina. Viimeisin speksi sai
           ensi-iltansa lokakuussa 2019.
         </p>
         <p class="english">
           Spex or Speksi is interactive student musical theatre, which includes spectacular shows with live music and
           dance. Fyysikkospeksi has been presented semi-annually since 2007 and has mainly included students from the
-          Guild of Physics. During the years, Fyysikkospeksi has grown both in the number of viewers and doers. This
-          year’s production will premier in October 2019.
+          Guild of Physics. During the years, Fyysikkospeksi has grown both in the number of viewers and doers. The
+          most recent production premiered in October 2019.
         </p>
         <p class="finnish">
           Fyysikkospeksi on vuosien varrella kasvanut niin tekijöiden kuin katsojienkin määrässä mitattuna ja
@@ -398,8 +391,7 @@
           ajan saatossa monipuolistunut ⎼ speksin tekeminen yhdistää ihmisiä yli pääainerajojen.
         </p>
         <p class="english">
-          Fyysikkospeksi is also the only speksi in the world that is performed both in Finnish and English - this year
-          in November!
+          Fyysikkospeksi is also the only speksi in the world that is performed both in Finnish and English.
         </p>
         <p class="finnish">
           Muista spekseistä poiketen Fyysikkospeksi esitetään suomeksi ja sen jälkeen käännetään ja esitetään myös
@@ -414,11 +406,10 @@
             <h2 class="finnish">Tiesitkö?</h2>
             <h2 class="english">Did you know?</h2>
             <p class="finnish">
-              Vuoden 2019 Fyysikkospeksiä on tekemässä yli 120 opiskelijaa 15:sta opiskelualalta.
+              Vuoden 2019 Fyysikkospeksiä oli tekemässä yli 120 opiskelijaa 15:sta opiskelualalta.
             </p>
             <p class="english">
-              There are over 120 students from 15 lines of study participating in the making of this year’s
-              Fyysikkospeksi.
+              There were over 120 students from 15 lines of study participating in the making of Fyysikkospeksi 2019.
             </p>
           </div>
         </div>
@@ -443,13 +434,17 @@
           class="some-link">instagram.com/fyysikkospeksi</a>
       </div>
       <div class="footer-column">
-        <h3 class="uppercase">Fyysikkospeksi</h3>
-        <i class="footer-text finnish">Yhteydenotot, lipunmyynti ja yrityssuhteet</i>
-        <i class="footer-text english">Contact, ticket sales and corporate relations</i>
-        <p><a href="mailto:tuottajat@fyysikkospeksi.fi">tuottajat@fyysikkospeksi.fi</a></p>
+        <img src="./img/speksilogo.png" class="spex-logo-footer" />
+        <h3 class="uppercase inline">Fyysikkospeksi</h3>
+        <p>
+          <i class="footer-text finnish">Yhteydenotot, lipunmyynti ja yrityssuhteet</i>
+          <i class="footer-text english">Contact, ticket sales and corporate relations</i><br />
+          <a href="mailto:tuottajat@fyysikkospeksi.fi">tuottajat@fyysikkospeksi.fi</a>
+        <p/>
       </div>
       <div class="footer-column">
-        <h3 class="uppercase">Fyysikkokilta ry</h3>
+        <img src="./img/fii.png" class="guild-logo-footer" />
+        <h3 class="uppercase inline">Fyysikkokilta ry</h3>
         <p>
           <a href="https://fyysikkokilta.fi/">fyysikkokilta.fi</a> <br />
           <a href="mailto:fk@fyysikkokilta.fi">fk@fyysikkokilta.fi</a>
