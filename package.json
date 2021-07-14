@@ -6,7 +6,8 @@
   "scripts": {
     "start": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "gulp bootlint && gulp lint-sass"
+    "lint": "gulp bootlint && gulp lint-sass",
+    "build": "gulp sass"
   },
   "repository": {
     "type": "git",
