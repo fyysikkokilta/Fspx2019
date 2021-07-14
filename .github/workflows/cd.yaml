@@ -11,17 +11,15 @@ on:
 
 jobs:
   deploy:
-    name: Deploy
+    name: Deploy 🚀
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: SSH to server and pull
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
           script: |
             cd ~/www/speksi
             git pull
