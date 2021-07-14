@@ -26,11 +26,13 @@ const watchFiles = () => {
 
 const watch = gulp.parallel(watchFiles, browserSync);
 
+// Lint Bootstrap in HTML
 gulp.task('bootlint', () => {
   return gulp.src('./index.html')
     .pipe(bootlint());
 });
 
+// Lint Sass files
 gulp.task('lint-sass', function lintCssTask() {
   return gulp.src('sass/**/*.scss')
     .pipe(gulpStylelint({
@@ -38,6 +40,13 @@ gulp.task('lint-sass', function lintCssTask() {
         {formatter: 'string', console: true}
       ]
     }));
+});
+
+// Compile Sass to CSS
+gulp.task('sass', () => {
+  return gulp.src('sass/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('css'))
 });
 
 exports.watch = watch;
