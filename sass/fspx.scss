@@ -1,0 +1,656 @@
+// Palette
+$dark-blue: #1e6680;
+$light-blue: #6ea4c8;
+$lighter-blue: #75c8ff;
+$white: #f8f8f8;
+$grey: #161d21;
+$light-grey: #272f34;
+$lighter-grey: #404e56;
+$lightest-grey: #637984;
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+$font-sans-serif: "Nunito", sans-serif;
+
+// Downloaded from http://fontsforweb.com
+@font-face {
+  font-family: "BRLNSR";
+  src: url("./../fonts/BRLNSR.eot");
+  src:
+    local("BRLNSR"),
+    url("./../fonts/BRLNSR.woff") format("woff"),
+    url("./../fonts/BRLNSR.ttf") format("truetype");
+}
+$font-header: brlnsr;
+
+// Styles
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 52px !important;
+  font-family: $font-header;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: $font-header;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: $font-sans-serif;
+  font-weight: normal;
+
+  &.uppercase {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+
+    &.inline {
+      display: inline;
+    }
+  }
+}
+
+a {
+  color: $white !important;
+}
+
+p {
+  font-size: 19px;
+  font-family: $font-sans-serif;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.flag {
+  width: 20px;
+  margin-top: -2px;
+  margin-left: 2px;
+}
+
+.header-background-image {
+  min-height: 600px;
+  margin: 0;
+  padding: 0;
+  // background-image: url("../img/trailer_header_bg.jpg");
+  // filter: brightness(50%);
+  height: 35vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 -1px 5px 1px #1c2125;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  min-height: 600px;
+  height: 35vw;
+}
+
+.header-contents {
+  top: 20%;
+  position: relative;
+  color: $white;
+  text-align: center;
+  text-shadow: 1px 1px 3px $grey;
+
+  h1,
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.1rem;
+  }
+
+  h3 {
+    font-family: $font-header;
+  }
+}
+
+.button-outline {
+  color: $white;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  margin: 20px;
+  border: 3px solid $lighter-blue;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background-color: $light-blue;
+    border: 3px solid $light-blue;
+  }
+}
+
+.button-solid {
+  color: $grey !important;
+  text-transform: uppercase;
+  padding: 18px 33px;
+  margin: 20px;
+  background-color: $lighter-blue;
+
+  &:hover {
+    color: $grey !important;
+    text-decoration: none;
+    background-color: $light-blue;
+  }
+}
+
+.partners {
+  background-color: $light-grey;
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+
+  h2 {
+    width: 100%;
+    margin-top: 15px;
+    color: $lightest-grey;
+  }
+
+  padding: 30px 3rem 50px 3rem;
+}
+
+.partner-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 20px;
+}
+
+.partner-image {
+  width: 200px;
+  display: inline-block;
+}
+
+.main-partner-image {
+  width: 200px;
+  display: inline-block;
+}
+
+.middle-image {
+  // Path relative to css-file
+  background-image: url("../img/subheader_bg.jpg");
+  background-color: $dark-blue;
+  height: 35vw;
+  max-height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 1px 5px 1px #1c2125, inset 0 -1px 5px 1px #1c2125;
+}
+
+.lafkat {
+  text-align: left;
+
+  h3 {
+    font-size: 22px;
+  }
+}
+
+.header-button-row {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  background: $dark-blue;//$lightest-grey;
+  border-radius: 50%;
+  color: #fff;
+  height: 0;
+  padding-bottom: 350px;
+  width: 350px;
+  box-shadow: 0 1px 5px 3px #1d2327;
+}
+
+.circle-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 22%;
+  padding: 30px;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+}
+
+.old-spexes {
+  background-color: $grey;
+  color: $light-blue;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.carousel-item {
+  position: absolute;
+  min-height: 600px;
+  height: 35vw;
+  min-width: 100%;
+  max-width: 100%; //none
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#carousel-item-1 {
+  background: url("../img/carousel/1.jpg") no-repeat center; // center
+}
+
+#carousel-item-2 {
+  background: url("../img/carousel/2.jpg") no-repeat center;
+}
+
+#carousel-item-3 {
+  background: url("../img/carousel/3.jpg") no-repeat center;
+}
+
+#carousel-item-4 {
+  background: url("../img/carousel/4.jpg") no-repeat center;
+}
+
+#carousel-item-5 {
+  background: url("../img/carousel/5.jpg") no-repeat center;
+}
+
+#carousel-item-6 {
+  background: url("../img/carousel/6.jpg") no-repeat center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: $lightest-grey;
+  color: $white;
+  padding: 40px 0;
+
+  a {
+    margin-bottom: 20px;
+  }
+
+  .footer-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-column {
+    padding: 15px;
+
+    p {
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.production-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $grey;
+  color: $white;
+  padding: 72px 10%;
+
+  h3 {
+    color: $light-blue;
+  }
+
+  .production-shows {
+    width: 45%;
+
+    table {
+      width: 100%;
+      border: 3px solid $dark-blue;
+      font-family: $font-sans-serif;
+      font-size: 18px;
+      margin-bottom: 40px;
+
+      .muted-text {
+        font-size: 18px;
+      }
+
+      tr {
+        td {
+          padding: 20px 10px 50px 10px;
+          vertical-align: top;
+
+          .list-item {
+            line-height: 35px;
+          }
+        }
+
+        td:first-child {
+          width: 45%;
+          background-color: $dark-blue;
+
+          .icon {
+            width: 20px;
+            margin: -5px 5px 0 5px;
+          }
+        }
+
+        td:last-child {
+          padding: 20px 10px 50px 40px;
+        }
+      }
+    }
+  }
+
+  .production-story {
+    width: 49%;
+
+    p {
+      a {
+        color: $light-blue !important;
+      }
+    }
+
+    table {
+      margin-top: 70px;
+      width: 100%;
+      font-family: $font-sans-serif;
+      font-size: 18px;
+
+      tr {
+        th {
+          background-color: $dark-blue;
+          text-transform: uppercase;
+          font-weight: 500;
+          padding: 15px 20px;
+        }
+
+        td {
+          text-align: right;
+          padding: 20px 0;
+          border-bottom: 1px solid #1a252b;
+
+          .buy-button {
+            background-color: $light-blue;
+            padding: 10px;
+            color: $grey !important;
+            text-transform: uppercase;
+            font-size: 14px;
+
+            &:hover {
+              text-decoration: none;
+              background-color: #8bc2e6;
+            }
+          }
+
+          .sold-out-text {
+            text-transform: uppercase;
+            font-size: 15px;
+            padding: 10px;
+          }
+        }
+
+        td:first-child {
+          text-align: left;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  .production-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
+
+
+.general-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: $light-grey;
+  color: $white;
+  padding: 92px 5rem;
+
+  .general-info {
+    h2 {
+      color: $light-blue;
+      margin-bottom: 32px;
+    }
+
+    width: 50%;
+  }
+}
+
+.muted-text {
+  color: $lightest-grey !important;
+  font-size: 20px;
+  font-family: $font-sans-serif;
+  font-style: italic;
+}
+
+.navbar {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  background: none;
+  background: rgba(0, 0, 0, 0);
+  position: fixed !important;
+  width: 100%;
+}
+
+.navbar-toggler {
+  border-color: $lighter-grey !important;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar.scrolled {
+  background: rgb(68, 68, 68); /* IE */
+  background: rgba(0, 0, 0, 0.78) !important; /* NON-IE */
+}
+
+.navbar-brand {
+  font-family: $font-header;
+}
+
+.nav-link {
+  color: $white !important;
+  font-family: $font-sans-serif;
+  font-weight: 600;
+}
+
+.speksi-logo {
+  width: 27px;
+  margin: 0 5px;
+}
+
+.fb-logo {
+  width: 30px;
+  margin-top: -3px;
+  margin-right: 5px;
+}
+
+.ig-logo {
+  width: 30px;
+  margin-top: -3px;
+  margin-right: 5px;
+}
+
+.spex-logo-footer {
+  width: 40px;
+  margin-top: -3px;
+  margin-right: 6px;
+}
+
+.guild-logo-footer {
+  width: 56px;
+  margin-top: -3px;
+  margin-right: 6px;
+  margin-left: -6px;
+}
+
+.footer-text {
+  color: #9eb8c5;
+  line-height: 30px;
+}
+
+.some-link {
+  color: $white;
+
+  &:hover {
+    color: $light-blue;
+  }
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -150px;
+  visibility: hidden;
+}
+
+.group-ticket {
+  margin-left: -4px;
+}
+
+.desktop-ticket-info {
+  display: block;
+
+  a {
+    color: $light-blue !important;
+  }
+}
+
+.mobile-ticket-info {
+  display: none;
+
+  a {
+    color: $light-blue !important;
+  }
+}
+
+// TODO responsive layout
+@media screen and (max-width: 992px) {
+  .desktop-ticket-info {
+    display: none;
+  }
+
+  .mobile-ticket-info {
+    display: block;
+  }
+
+  .production-shows {
+    width: 100% !important;
+  }
+
+  .production-story {
+    width: 100% !important;
+  }
+
+  .general-info {
+    width: 100% !important;
+  }
+
+  .navbar {
+    background: rgba(0, 0, 0, 0.78);
+  }
+
+  .tickets-table {
+    margin-bottom: 60px;
+  }
+
+  .production-container {
+    padding: 52px 1rem;
+    flex-direction: column-reverse;
+
+    .production-header {
+      display: none;
+    }
+  }
+
+  .general-container {
+    padding: 52px 2rem;
+  }
+
+  .main-partner-image {
+    width: 100px;
+  }
+
+  .partners {
+    padding: 30px 1rem 50px 1rem;
+
+    .main-partner-image {
+      width: 100px;
+    }
+
+    .partner-image {
+      width: 150px;
+    }
+
+    .lafkat {
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .production-shows {
+    table {
+      tr {
+        td:first-child {
+          font-size: 16px !important;
+
+          .icon {
+            margin-left: 0 !important;
+            width: 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .header-background-image {
+    background-image: url("../img/trailer_header_bg_mobile.jpg");
+  }
+
+  .tickets-table {
+    font-size: 16px !important;
+
+    .weekday-td {
+      width: 30px;
+    }
+  }
+
+  .footer-column {
+    width: 80%;
+    margin: 0 10%;
+  }
+}

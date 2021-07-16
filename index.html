@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="./css/fspx.css" />
+  <link rel="icon" sizes="48x48" href="img/speksilogo_48.ico">
+  <link rel="icon" sizes="16x16" href="img/speksilogo_16.ico">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Fyysikkospeksi</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="img/speksilogo.png" class="speksi-logo" alt="Fyysikkospeksi logo" />
+      Fyysikkospeksi
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#production">Fyysikkospeksi 2019</a>
+        </li>
+        <!--li class="nav-item">
+          <a class="nav-link finnish" href="#buy-tickets">Osta liput</a>
+          <a class="nav-link english" href="#buy-tickets">Buy tickets</a>
+        </li-->
+        <li class="nav-item">
+          <a class="nav-link finnish" href="#about">Mikä speksi?</a>
+          <a class="nav-link english" href="#about">About spex</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Historia</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link finnish" href="#contact">Yhteystiedot</a>
+          <a class="nav-link english" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link finnish" href="#" onclick="inEnglish()">In English</a>
+          <a class="nav-link english" href="#" onclick="inFinnish()">In Finnish</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="grid-container">
+    <!-- Front page: big background image and navigation buttons and ticket shop button -->
+    <div class="header header-background-image">
+      <div class="overlay">
+        <div class="carousel slide" data-ride="carousel" data-interval=4500 keyboard=false>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="carousel-item-1"></div>
+            <div class="carousel-item" id="carousel-item-2"></div>
+            <div class="carousel-item" id="carousel-item-3"></div>
+            <div class="carousel-item" id="carousel-item-4"></div>
+            <div class="carousel-item" id="carousel-item-5"></div>
+            <div class="carousel-item" id="carousel-item-6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header-contents">
+        <h2 class="finnish">Fyysikkospeksi 2019 oli</h2>
+        <h2 class="english">Fyysikkospeksi 2019 was</h2>
+        <h1 class="finnish">Suo anteeksi</h1>
+        <h1 class="english">Our hopes and expectations</h1>
+        <h3 class="finnish dates">näytökset 17.-21.10.2019</h3>
+        <h3 class="english dates">presented on 19.11.2019</h3>
+
+        <br />
+        <br />
+        <div class="header-button-row">
+          <a href="#production" class="button-outline finnish">Lue lisää</a>
+          <a href="#production" class="button-outline english">Read more</a>
+          <!--a href="#buy-tickets" class="button-solid finnish">Osta lippu</a>
+          <a href="#buy-tickets" class="button-solid english">Buy tickets</a-->
+        </div>
+      </div>
+    </div>
+
+    <!-- Area for showing details about current production: schedule, short text, ticket prices -->
+    <a class="anchor" id="production"></a>
+    <div class="production-container">
+      <div class="production-header">
+        <h2>Fyysikkospeksi 2019</h2>
+        <!-- <span class="muted-text">Tarina kaljasta ja veneistä ja kaikesta</span> -->
+      </div>
+      <div class="production-shows">
+        <!-- Tähän yleistietopaketti näytöksistä -->
+        <table>
+          <tr>
+            <td>
+              <i data-feather="map-pin" class="icon"></i>
+              <span class="finnish">Esityspaikka</span>
+              <span class="english">Show location</span>
+            </td>
+            <td>
+              Louhisali
+              <br />
+              <a href="https://goo.gl/maps/1Fg13cUZLGESxPZx9" target="_blank" class="muted-text">Kulttuuriaukio 2, 02100
+                Espoo</a>
+              <br /><br />
+              Dipoli <img class="flag" src="img/united-kingdom-flag-icon-32.png">
+              <br />
+              <a href="https://goo.gl/maps/MVrLLmH8dShDVEr57" target="_blank" class="muted-text">Otakaari 24, 02150
+                Espoo</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i data-feather="tag" class="icon"></i>
+              <span class="finnish">Liput</span>
+              <span class="english">Tickets</span>
+            </td>
+            <td>
+              <span class="finnish list-item">20 € &nbsp; Peruslippu</span>
+              <span class="english list-item">20 € &nbsp; Normal ticket</span>
+              <br />
+              <span class="finnish list-item">15 € &nbsp; Opiskelija, lapsi, eläkeläinen</span>
+              <span class="english list-item">15 € &nbsp; Student, children pensioner</span>
+              <br />
+              <span class="finnish list-item">40 € &nbsp; Kannatuslippu</span>
+              <span class="english list-item">40 € &nbsp; Patron</span>
+              <br />
+              <span class="finnish list-item group-ticket">-10 % Ryhmälippu</span>
+              <span class="english list-item group-ticket">-10 % Group ticket</span>
+              <br />
+              <span class="muted-text finnish">min. 8 henkilöä</span>
+              <span class="muted-text english">min. 8 people</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i data-feather="clock" class="icon"></i>
+              <span class="finnish">Kesto</span>
+              <span class="english">Duration</span>
+            </td>
+            <td>
+              <span class="finnish">Noin kolme tuntia</span>
+              <span class="english">Approx. 3 hours</span>
+              <br />
+              <span class="muted-text finnish">sis. väliajan 20 min</span>
+              <span class="muted-text english">incl. intermission 20 min</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i data-feather="calendar" class="icon"></i>
+              <span class="finnish">Esitysajat</span>
+              <span class="english">Show times</span>
+            </td>
+            <td>
+              <span class="finnish list-item">17.10. klo 19.00</span>
+              <span class="english list-item">17.10. at 7pm <img class="flag" src="img/finland-flag-icon-32.png"></span>
+              <br />
+              <span class="finnish list-item">18.10. klo 19.00</span>
+              <span class="english list-item">18.10. at 7pm <img class="flag" src="img/finland-flag-icon-32.png"></span>
+              <br />
+              <span class="finnish list-item">19.10. klo 17.00</span>
+              <span class="english list-item">19.10. at 5pm <img class="flag" src="img/finland-flag-icon-32.png"></span>
+              <br />
+              <span class="finnish list-item">20.10. klo 17.00</span>
+              <span class="english list-item">20.10. at 5pm <img class="flag" src="img/finland-flag-icon-32.png"></span>
+              <br />
+              <span class="finnish list-item">21.10. klo 18.00</span>
+              <span class="english list-item">21.10. at 6pm <img class="flag" src="img/finland-flag-icon-32.png"></span>
+              <br /><br />
+              <span class="finnish list-item">19.11. klo 18.00 <img class="flag" src="img/united-kingdom-flag-icon-32.png"></span>
+              <span class="english list-item">19.11. at 6pm <img class="flag" src="img/united-kingdom-flag-icon-32.png"></span>
+            </td>
+          </tr>
+        </table>
+
+        <div class="mobile-ticket-info">
+          <P class="finnish">Tarjoamme ryhmäliput vähintään 8 hengen seurueille, kun koko tilaus tehdään kerralla.
+            Mikäli haluatte ostaa ryhmälippuja, lähettäkää sähköpostia osoitteeseen <a
+              href="mailto:tuottajat@fyysikkospeksi.fi">tuottajat@fyysikkospeksi.fi</a>. Ryhmille varataan
+            automaattisesti vierekkäiset paikat. Voitte tehdä ryhmälle myös alustavan varauksen, kunhan vahvistatte lopullisen osallistujamäärän viimeistään kaksi viikkoa ennen näytöstä.</p>
+          <P class="english">Group tickets are offered to groups of over 8 people when all tickets are bought at the
+            same time. If you want to buy group tickets, please send an email to <a
+              href="mailto:tuottajat@fyysikkospeksi.fi">tuottajat@fyysikkospeksi.fi</a>. Adjacent seats are
+            automatically reserved for groups.</p>
+          <p class="finnish">Kannatuslipun ostajille varataan parhaat paikat keskeltä salin etuosasta.</p>
+          <p class="english">Buying a patron ticket ensures that you will get the best seats in the whole theatre!</p>
+        </div>
+      </div>
+      <div class="production-story">
+        <h3 class="uppercase finnish">Suo anteeksi</h3>
+        <h3 class="uppercase english">Our hopes and expectations</h3>
+        <p class="finnish">
+          Vuoden 2019 Fyysikkospeksi vei katsojat lähihistoriaan, idylliseen suomalaiseen maalaiskylään, Takasäynävän
+          tuolle puolen. Hiljakseen eteenpäin virtaavan ajan juoksuun tulee kuitenkin särö, kun vuosia patoutuneet
+          kaunat purkautuvat ärjyvänä tunteiden koskena ja selittämätön pimeys pyyhkii puintikypsinä notkuvien
+          kultaisten viljapeltojen yli. Loppujen lopuksi kysymykseksi jää vain kumpi on sakeampaa, veri vai kaiken
+          nielevän suonsilmäkkeen mustana päilyvä vesi.
+        </p>
+        <p class="english">
+          Fyysikkospeksi 2019 took the viewer on a tour of recent history, to a small rustic town in the Finnish
+          countryside, next to the middle of nowhere. The calm meandering passage of time seems endless until it
+          doesn’t; Levees protecting a harbored grudge break and long bottled resentment flows freely. An inexplicable
+          source of darkness floats over the amber waves of grain. Ultimately, one question remains: which is thicker,
+          blood or the murky muddy waters of the wetland?
+        </p>
+        <p class="finnish">
+          Kuvia esityksistä on nähtävillä <a href="https://www.flickr.com/photos/fyysikkokilta/albums/72157711879309268/">Fyysikkokillan galleriassa.</a>
+        </p>
+        <p class="english">
+          Pictures from the shows can be seen in the <a href="https://www.flickr.com/photos/fyysikkokilta/albums/72157711879309268/">Guild of Physics gallery.</a>
+        </p>
+        <!--a class="anchor" id="buy-tickets"></a>
+        <table class="tickets-table">
+          <tr>
+            <th colspan="4">
+              <span class="finnish">Osta liput</span>
+              <span class="english">Buy tickets</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="weekday-td">
+              <span class="finnish">Torstai</span>
+              <span class="english">Thursday <img class="flag" src="img/finland-flag-icon-32.png"></span>
+            </td>
+            <td>17.10.</td>
+            <td>
+              <span class="finnish">klo 19.00</span>
+              <span class="english">at 7pm</span>
+            </td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="finnish">Perjantai</span>
+              <span class="english">Friday <img class="flag" src="img/finland-flag-icon-32.png"></span>
+            </td>
+            <td>18.10.</td>
+            <td>
+              <span class="finnish">klo 19.00</span>
+              <span class="english">at 7pm</span>
+            </td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="finnish">Lauantai</span>
+              <span class="english">Saturday <img class="flag" src="img/finland-flag-icon-32.png"></span>
+            </td>
+            <td>19.10.</td>
+            <td>
+              <span class="finnish">klo 17.00</span>
+              <span class="english">at 5pm</span>
+            </td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="finnish">Sunnuntai</span>
+              <span class="english">Sunday <img class="flag" src="img/finland-flag-icon-32.png"></span>
+            </td>
+            <td>20.10.</td>
+            <td>
+              <span class="finnish">klo 17.00</span>
+              <span class="english">at 5pm</span>
+            </td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="finnish">Maanantai</span>
+              <span class="english">Monday <img class="flag" src="img/finland-flag-icon-32.png"></span>
+            </td>
+            <td>21.10.</td>
+            <td>
+              <span class="finnish">klo 18.00</span>
+              <span class="english">at 6pm</span>
+            </td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="finnish">Tiistai <img class="flag" src="img/united-kingdom-flag-icon-32.png"></span>
+              <span class="english">Tuesday <img class="flag" src="img/united-kingdom-flag-icon-32.png"></span>
+            </td>
+            <td>19.11.</td>
+            <td>
+              <span class="finnish">klo 18.00</span>
+              <span class="english">at 6pm</span>
+            </td>
+            <td>
+              <a class="buy-button finnish" href="https://kide.app/events/a18e54a9-13fe-438f-ab1c-5beaac371740"
+                target="_blank">Osta lippu</a>
+              <a class="buy-button english" href="https://kide.app/events/a18e54a9-13fe-438f-ab1c-5beaac371740"
+                target="_blank">Buy tickets</a>
+            </td>
+          </tr>
+        </table-->
+      </div>
+    </div>
+
+    <!-- Area for showing sponsors of the spex -->
+    <div class="partners">
+      <h2 class="partner-header finnish">Pääyhteistyökumppanit</h2>
+      <h2 class="partner-header english">Main partners</h2>
+      <div class="partner-container">
+        <img class="main-partner-image" src="img/partners/reddal.png" alt="REDDAL" />
+      </div>
+      <div class="partner-container">
+        <img class="main-partner-image" src="img/partners/vtt.png" alt="VTT" />
+      </div>
+
+      <h2 class="partner-header finnish">Speksiä mahdollistamassa</h2>
+      <h2 class="partner-header english">Spex collaborators</h2>
+      <div class="partner-container">
+        <img class="partner-image" src="img/partners/aw.png" alt="Academic Work" />
+      </div>
+      <div class="partner-container">
+        <img class="partner-image" src="img/partners/ideastructura.png" alt="IdeaStructura" />
+      </div>
+      <div class="partner-container">
+        <img class="partner-image" src="img/partners/unisport.png" alt="Unisport" />
+      </div>
+      <div class="partner-container">
+        <img class="partner-image" src="img/partners/EspooWhite.png" alt="Espoon kaupunki" />
+      </div>
+      <div class="partner-container">
+        <img class="partner-image" src="img/partners/kulttuuriespoo.png" alt="Kulttuuriespoo" />
+      </div>
+      <div class="partner-container">
+        <img class="partner-image" src="img/partners/piruetti.png" alt="Piruetti" />
+      </div>
+      <div class="partner-container">
+        <img class="partner-image" src="img/partners/hertz.png" alt="Hertz" />
+      </div>
+      <div class="partner-container">
+        <img class="partner-image" src="img/partners/tter.png" alt="TTER" />
+      </div>
+
+
+
+      <h2 class="partner-header finnish">Kiitos!</h2>
+      <h2 class="partner-header english">Thank you!</h2>
+      <div class="lafkat">
+        <h3 class="finnish">Aalto-yliopiston Matematiikan ja systeemianalyysin laitos</h3>
+        <h3 class="english">Aalto University Department of Mathematics and Systems Analysis</h3>
+        <h3 class="finnish">Aalto-yliopiston Teknillisen fysiikan laitos</h3>
+        <h3 class="english">Aalto University Department of Applied Physics</h3>
+        <h3 class="finnish">Aalto-yliopiston neurotieteen ja lääketieteellisen tekniikan laitos</h3>
+        <h3 class="english">Aalto University Department of Neuroscience and Biomedical Engineering</h3>
+      </div>
+    </div>
+
+    <!-- Area for image -->
+    <div class="middle-image"></div>
+
+    <!-- Area where information about spex in general is told -->
+    <a class="anchor" id="about"></a>
+    <div class="general-container">
+      <div class="general-info">
+        <h2 class="finnish">Speksistä yleisesti</h2>
+        <h2 class="english">About spex</h2>
+        <p class="finnish">
+          Speksi on interaktiivista musiikki- ja tanssinumeroilla höystettyä opiskelijateatteria. Fyysikkospeksin, eli
+          alun perin Aalto-yliopiston Teknillisen Fysiikan ja Matematiikan opiskelijoiden oman speksin historia sai
+          alkunsa vuonna 2007 ja siitä lähtien Fyysikkospeksi on esitetty parittomina vuosina. Viimeisin speksi sai
+          ensi-iltansa lokakuussa 2019.
+        </p>
+        <p class="english">
+          Spex or Speksi is interactive student musical theatre, which includes spectacular shows with live music and
+          dance. Fyysikkospeksi has been presented semi-annually since 2007 and has mainly included students from the
+          Guild of Physics. During the years, Fyysikkospeksi has grown both in the number of viewers and doers. The
+          most recent production premiered in October 2019.
+        </p>
+        <p class="finnish">
+          Fyysikkospeksi on vuosien varrella kasvanut niin tekijöiden kuin katsojienkin määrässä mitattuna ja
+          vakiinnuttanut paikkansa osana pääkaupunkiseudun opiskelijakulttuuria. Fyysikkospeksin tekijäjoukko on myös
+          ajan saatossa monipuolistunut ⎼ speksin tekeminen yhdistää ihmisiä yli pääainerajojen.
+        </p>
+        <p class="english">
+          Fyysikkospeksi is also the only speksi in the world that is performed both in Finnish and English.
+        </p>
+        <p class="finnish">
+          Muista spekseistä poiketen Fyysikkospeksi esitetään suomeksi ja sen jälkeen käännetään ja esitetään myös
+          englanniksi. Voidaankin väittää, että Fyysikkospeksi on maailman ainoa englanninkielinen speksi!
+          Aalto-yliopiston ylioppilaskunta palkitsi vuonna 2013 produktiomme Limbo - asiaton oleskelu kielletty Vuoden
+          kansainvälisenä tekona.
+        </p>
+      </div>
+      <div class="circle-container">
+        <div class="circle">
+          <div class="circle-text">
+            <h2 class="finnish">Tiesitkö?</h2>
+            <h2 class="english">Did you know?</h2>
+            <p class="finnish">
+              Vuoden 2019 Fyysikkospeksiä oli tekemässä yli 120 opiskelijaa 15:sta opiskelualalta.
+            </p>
+            <p class="english">
+              There were over 120 students from 15 lines of study participating in the making of Fyysikkospeksi 2019.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer area for contacts and stuff -->
+    <a class="anchor" id="contact"></a>
+    <div class="footer-container">
+      <h2 class="footer-header finnish">Yhteystiedot</h2>
+      <h2 class="footer-header english">Contact</h2>
+      <div class="footer-column">
+        <h3 class="uppercase finnish">Seuraa speksiä somessa!</h3>
+        <h3 class="uppercase english">Follow us on social media!</h3>
+        <br />
+        <img src="./img/facebook_logo.png" class="fb-logo" />
+        <a href="https://facebook.com/fyysikkospeksi" target="_blank" class="some-link">facebook.com/fyysikkospeksi</a>
+        <br />
+        <br />
+        <img src="./img/instagram_logo.png" class="ig-logo" />
+        <a href="https://instagram.com/fyysikkospeksi" target="_blank"
+          class="some-link">instagram.com/fyysikkospeksi</a>
+      </div>
+      <div class="footer-column">
+        <img src="./img/speksilogo.png" class="spex-logo-footer" />
+        <h3 class="uppercase inline">Fyysikkospeksi</h3>
+        <p>
+          <i class="footer-text finnish">Yhteydenotot, lipunmyynti ja yrityssuhteet</i>
+          <i class="footer-text english">Contact, ticket sales and corporate relations</i><br />
+          <a href="mailto:tuottajat@fyysikkospeksi.fi">tuottajat@fyysikkospeksi.fi</a>
+        <p/>
+      </div>
+      <div class="footer-column">
+        <img src="./img/fii.png" class="guild-logo-footer" />
+        <h3 class="uppercase inline">Fyysikkokilta ry</h3>
+        <p>
+          <a href="https://fyysikkokilta.fi/">fyysikkokilta.fi</a> <br />
+          <a href="mailto:fk@fyysikkokilta.fi">fk@fyysikkokilta.fi</a>
+        </p>
+        <p>
+          AYY / Fyysikkokilta <br />
+          PL 69 <br />
+          02150 Espoo
+        </p>
+        <p class="finnish">Y-tunnus: 1903417-1</p>
+        <p class="english">Organization ID: 1903417-1</p>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="./js/fspx.js"></script>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace()
+    </script>
+</body>

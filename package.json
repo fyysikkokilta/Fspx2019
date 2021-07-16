@@ -1,0 +1,32 @@
+{
+  "name": "fspx2019",
+  "version": "1.0.0",
+  "description": "Tools to make developing a bit more easy",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gulp bootlint && gulp lint-sass",
+    "build": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyysikkokilta/Fspx2019.git"
+  },
+  "author": "Fyysikkospeksi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fyysikkokilta/Fspx2019/issues"
+  },
+  "homepage": "https://github.com/fyysikkokilta/Fspx2019#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-bootlint": "^1.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-stylelint": "^13.0.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0"
+  }
+}
